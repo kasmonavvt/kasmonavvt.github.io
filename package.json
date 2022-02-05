@@ -1,0 +1,19 @@
+{
+	"name": "tindog",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"scripts": {
+		"build": "parcel build src/index.html",
+		"start": "parcel src/index.html"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.2.1",
+		"bootstrap": "^5.1.3",
+		"parcel": "^2.2.1",
+		"postcss-preset-env": "^7.2.3",
+		"sass": "^1.49.0"
+	}
+}

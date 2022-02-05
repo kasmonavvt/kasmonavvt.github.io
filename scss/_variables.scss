@@ -1,0 +1,10 @@
+@use "_dimensions";
+@use "_colors";
+
+:root {
+	--color-primary: var(--color-red);
+	--color-secondary: var(--color-light-coral);
+	--color-plan-basic: var(--color-radical-red);
+	--color-plan-pro: var(--color-mountain-meadow);
+	--color-plan-entreprise: var(--color-cornflower-blue);
+}

@@ -1,0 +1,25 @@
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+* {
+	line-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	color: inherit;
+}

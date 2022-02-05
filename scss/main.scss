@@ -1,0 +1,258 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+@use "_reset";
+@use "_variables";
+@use "_typography";
+
+:root {
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+// h1 {
+// 	background: linear-gradient(to right, red, yellow);
+// 	color: transparent;
+// 	background-clip: text;
+// }
+
+.container-fluid {
+	padding: 9rem 23rem;
+}
+
+.hero {
+	background-color: var(--color-primary);
+	font-size: 3rem;
+	color: white;
+	padding-top: 4rem;
+
+	&__title {
+		text-align: center;
+		font-size: 6rem;
+		line-height: 1.5em;
+		font-weight: bold;
+
+		@media (min-width: 1200px) {
+			text-align: left;
+		}
+	}
+
+	&__navbar {
+		margin-bottom: 10rem;
+		font-family: "Ubuntu", sans-serif;
+		font-size: 2rem;
+	}
+
+	&__btn-download {
+		padding: 1rem 1.5rem;
+		font-size: 2rem;
+		margin: 2rem 2rem 2rem 0;
+		border-radius: 0.7rem;
+	}
+
+	&__image {
+		width: 35rem;
+
+		@media (min-width: 1200px) {
+			position: absolute;
+			transform: rotate(25deg);
+		}
+	}
+}
+
+.navbar {
+	&-brand {
+		font-size: 4rem;
+		font-weight: bold;
+	}
+
+	&-nav {
+		margin-left: auto;
+	}
+}
+
+.nav-link {
+	margin: 0 2rem;
+}
+
+.features {
+	background-color: white;
+	text-align: center;
+	line-height: 1.4;
+	position: relative;
+
+	&__col {
+		padding: 5%;
+	}
+}
+
+.feature {
+	&__img {
+		font-size: 8rem;
+		color: var(--color-primary);
+	}
+
+	&__title {
+		font-size: 3rem;
+		margin: 2rem 0;
+		font-weight: bold;
+	}
+}
+
+.testimonials {
+	background-color: var(--color-secondary);
+	text-align: center;
+	padding: 11rem 23rem;
+
+	&__text {
+		font-size: 3.2rem;
+		font-weight: bold;
+	}
+
+	&__logo {
+		border-radius: 50%;
+		width: 10rem;
+		margin: 2rem;
+	}
+}
+
+.press {
+	text-align: center;
+	background-color: var(--color-secondary);
+	padding: 5rem 0;
+
+	&__logo {
+		padding: 0 5rem;
+		width: 30rem;
+	}
+}
+
+@mixin boxShadow {
+	box-shadow: 0 2px 40px 0 hsla(0, 0%, 80%, 0.55);
+}
+
+.pricing {
+	text-align: center;
+
+	&__title {
+		font-weight: bold;
+		margin: 2rem 0;
+	}
+
+	&__subtitle {
+		font-size: 2rem;
+		font-weight: normal;
+		margin: 4rem 0;
+	}
+
+	&__card {
+		border-radius: 2rem;
+		margin: 4rem 0;
+		text-align: center;
+		transition: all 0.5s;
+		padding: 6rem 0;
+
+		&--highlighted {
+			@include boxShadow();
+		}
+
+		&:hover {
+			@include boxShadow();
+
+			transform: translateY(-2rem);
+		}
+	}
+}
+
+.pricing-card {
+	&__img {
+		width: 10rem;
+	}
+
+	&__title {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		font-weight: normal;
+	}
+
+	&__price {
+		font-size: 5rem;
+		font-weight: bold;
+		margin-bottom: 3rem;
+	}
+
+	&__features {
+		list-style: none;
+		padding-left: 0;
+		font-size: 1.6rem;
+
+		margin-bottom: 35px;
+		color: #303132;
+	}
+
+	&__feature {
+		line-height: 200%;
+	}
+
+	&__btn {
+		color: white;
+		// font-size: 16px;
+		font-weight: bold;
+		width: 145px;
+		height: 45px;
+		border-radius: 22.5px;
+		transition: all 0.4s;
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+
+		&--plan--basic {
+			background-color: var(--color-plan-basic);
+
+			&:hover {
+				box-shadow: 0 3px 0 0 var(--color-plan-basic);
+			}
+		}
+
+		&--plan--pro {
+			background-color: var(--color-plan-pro);
+
+			&:hover {
+				box-shadow: 0 3px 0 0 var(--color-plan-pro);
+			}
+		}
+
+		&--plan--entreprise {
+			background-color: var(--color-plan-entreprise);
+
+			&:hover {
+				box-shadow: 0 3px 0 0 var(--color-plan-entreprise);
+			}
+		}
+
+		&:active {
+			transform: translateY(3rem);
+			box-shadow: none;
+		}
+	}
+}
+
+.footer {
+	text-align: center;
+
+	&__copr {
+		margin-top: 5rem;
+		font-size: 2rem;
+	}
+}
+
+.socials {
+	&__icon {
+		color: black;
+		font-size: 3rem;
+		margin: 5rem 4rem;
+	}
+}
