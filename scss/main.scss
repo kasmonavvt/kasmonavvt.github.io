@@ -3,21 +3,17 @@
 @use "_variables";
 @use "_typography";
 
-:root {
+@mixin boxShadow {
+	box-shadow: 0 .5rem 4rem 0 hsl(0 0% 80% / 0.55);
 }
-
-body {
-	font-family: "Poppins", sans-serif;
-}
-
-// h1 {
-// 	background: linear-gradient(to right, red, yellow);
-// 	color: transparent;
-// 	background-clip: text;
-// }
 
 .container-fluid {
-	padding: 9rem 23rem;
+	padding: 9rem 14rem;
+}
+
+.title-medium {
+	font-size: 3rem;
+	font-weight: bold;
 }
 
 .hero {
@@ -25,16 +21,17 @@ body {
 	font-size: 3rem;
 	color: white;
 	padding-top: 4rem;
+	text-align: center;
+
+	@media (min-width: 1200px) {
+		text-align: left;
+	}
 
 	&__title {
-		text-align: center;
+		margin-bottom: 3rem;
 		font-size: 6rem;
 		line-height: 1.5em;
 		font-weight: bold;
-
-		@media (min-width: 1200px) {
-			text-align: left;
-		}
 	}
 
 	&__navbar {
@@ -43,95 +40,91 @@ body {
 		font-size: 2rem;
 	}
 
-	&__btn-download {
-		padding: 1rem 1.5rem;
+	&__btn {
+		padding: 1.3rem 2.5rem;
 		font-size: 2rem;
 		margin: 2rem 2rem 2rem 0;
 		border-radius: 0.7rem;
+
+		i {
+			margin-right: 0.6rem;
+		}
 	}
 
 	&__image {
-		width: 35rem;
-
-		@media (min-width: 1200px) {
-			position: absolute;
-			transform: rotate(25deg);
-		}
+		display: block;
+		width: 30rem;
+		margin: 0 auto;
 	}
 }
 
-.navbar {
-	&-brand {
+.navigation {
+	&__brand {
 		font-size: 4rem;
 		font-weight: bold;
 	}
 
-	&-nav {
+	&__menu {
 		margin-left: auto;
 	}
-}
 
-.nav-link {
-	margin: 0 2rem;
-}
-
-.features {
-	background-color: white;
-	text-align: center;
-	line-height: 1.4;
-	position: relative;
-
-	&__col {
-		padding: 5%;
+	&__item {
+		margin: 0 2rem;
 	}
 }
 
-.feature {
+.tech {
+	margin: 10rem 2rem;
+	text-align: center;
+	line-height: 1.4;
+
+	&__col {
+		margin: 5rem 2rem;
+	}
+
 	&__img {
 		font-size: 8rem;
 		color: var(--color-primary);
+
+		&--html {
+			color: var(--color-punch);
+		}
+
+		&--css {
+			color: var(--color-cerulean);
+		}
+
+		&--js {
+			color: var(--color-ronchi);
+		}
+
+		&--sass {
+			color: var(--color-hopbush);
+		}
+
+		&--git {
+			color: var(--color-flamingo);
+		}
 	}
 
 	&__title {
-		font-size: 3rem;
 		margin: 2rem 0;
-		font-weight: bold;
 	}
 }
 
-.testimonials {
+.story {
+	height: 40rem;
 	background-color: var(--color-secondary);
 	text-align: center;
 	padding: 11rem 23rem;
 
 	&__text {
-		font-size: 3.2rem;
+		font-size: 3rem;
 		font-weight: bold;
 	}
-
-	&__logo {
-		border-radius: 50%;
-		width: 10rem;
-		margin: 2rem;
-	}
 }
 
-.press {
-	text-align: center;
-	background-color: var(--color-secondary);
-	padding: 5rem 0;
-
-	&__logo {
-		padding: 0 5rem;
-		width: 30rem;
-	}
-}
-
-@mixin boxShadow {
-	box-shadow: 0 2px 40px 0 hsla(0, 0%, 80%, 0.55);
-}
-
-.pricing {
+.skills {
 	text-align: center;
 
 	&__title {
@@ -141,111 +134,52 @@ body {
 
 	&__subtitle {
 		font-size: 2rem;
-		font-weight: normal;
 		margin: 4rem 0;
 	}
 
 	&__card {
 		border-radius: 2rem;
 		margin: 4rem 0;
-		text-align: center;
 		transition: all 0.5s;
 		padding: 6rem 0;
 
-		&--highlighted {
-			@include boxShadow();
-		}
-
 		&:hover {
 			@include boxShadow();
-
-			transform: translateY(-2rem);
+			transform: translateY(-1.5rem);
 		}
 	}
 }
 
-.pricing-card {
+.skills-card {
 	&__img {
-		width: 10rem;
+		width: 8rem;
 	}
 
 	&__title {
-		font-size: 2rem;
-		margin-bottom: 1rem;
-		font-weight: normal;
+		margin: 4rem 0 2rem;
 	}
 
-	&__price {
-		font-size: 5rem;
-		font-weight: bold;
-		margin-bottom: 3rem;
-	}
-
-	&__features {
+	&__skills {
 		list-style: none;
-		padding-left: 0;
-		font-size: 1.6rem;
-
-		margin-bottom: 35px;
-		color: #303132;
+		font-size: 1.8rem;
 	}
 
-	&__feature {
+	&__skill {
 		line-height: 200%;
-	}
-
-	&__btn {
-		color: white;
-		// font-size: 16px;
-		font-weight: bold;
-		width: 145px;
-		height: 45px;
-		border-radius: 22.5px;
-		transition: all 0.4s;
-		position: relative;
-		display: flex;
-		align-items: center;
-		margin-left: auto;
-		margin-right: auto;
-		justify-content: center;
-
-		&--plan--basic {
-			background-color: var(--color-plan-basic);
-
-			&:hover {
-				box-shadow: 0 3px 0 0 var(--color-plan-basic);
-			}
-		}
-
-		&--plan--pro {
-			background-color: var(--color-plan-pro);
-
-			&:hover {
-				box-shadow: 0 3px 0 0 var(--color-plan-pro);
-			}
-		}
-
-		&--plan--entreprise {
-			background-color: var(--color-plan-entreprise);
-
-			&:hover {
-				box-shadow: 0 3px 0 0 var(--color-plan-entreprise);
-			}
-		}
-
-		&:active {
-			transform: translateY(3rem);
-			box-shadow: none;
-		}
 	}
 }
 
 .footer {
 	text-align: center;
+	margin-bottom: 4rem;
 
 	&__copr {
 		margin-top: 5rem;
 		font-size: 2rem;
+	}
+
+	&__flag {
+		margin: 0 0.4rem;
 	}
 }
 

@@ -1,1 +1,1 @@
-document.querySelector("h1").innerHTML = "Test2";
+document.getElementById("footer__year").innerHTML = new Date().getFullYear();

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>TinDog</title>
+		<title>Portfolio</title>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 		<!--Google Fonts-->
@@ -18,7 +18,7 @@
 
 		<!-- Font Awesome -->
 		<script
-			src="https://kit.fontawesome.com/4c480c9603.js"
+			src="https://kit.fontawesome.com/7434a0763b.js"
 			crossorigin="anonymous"
 		></script>
 
@@ -28,15 +28,16 @@
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
 		></script>
-
 	</head>
 
 	<body>
 		<div class="hero container-fluid">
-			<nav class="navitation hero__navbar navbar navbar-expand-lg navbar-dark">
-				<a class="navbar-brand" href="#">
-					<i class="navigation__logo fas fa-paw"></i>
-					tindog
+			<nav
+				class="navigation hero__navbar navbar navbar-expand-lg navbar-dark"
+			>
+				<a class="navigation__brand navbar-brand" href="#">
+					<i class="fa-solid fa-code"></i>
+					Dymytriy V
 				</a>
 				<button
 					class="navbar-toggler"
@@ -50,102 +51,108 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<div class="navbar-nav">
-						<a class="nav-link" href="#carouselId">Reviews</a>
-						<a class="nav-link" href="#pricing">Pricing</a>
-						<a class="nav-link" href="#socials">Contact</a>
+					<div class="navigation__menu navbar-nav">
+						<a class="navigation__item nav-link" href="#story">My Story</a>
+						<a class="navigation__item nav-link" href="#skills">Skills</a>
+						<a class="navigation__item nav-link" href="#socials">Socials</a>
 					</div>
 				</div>
 			</nav>
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<h1 class="hero__title">
-						Meet new and interesting dogs nearby.
-					</h1>
-					<button
+					<h1 class="hero__title">Welcome to my personal website</h1>
+					<a
+						class="btn btn-lg btn-dark hero__btn"
 						type="button"
-						class="btn btn-lg btn-dark hero__btn-download"
+						href=""
 					>
-						<i class="fab fa-apple"></i>
-						Download
-					</button>
-					<button
+						<i class="fa-solid fa-file-arrow-down"></i>
+						Resume
+					</a>
+					<a
 						type="button"
-						class="btn btn-lg btn-outline-light hero__btn-download"
+						class="btn btn-lg btn-outline-light hero__btn"
+						href="https://www.linkedin.com/in/dymytriyvykhodets/"
 					>
-						<i class="fab fa-google-play"></i>
-						Download
-					</button>
+						<i class="fa-brands fa-linkedin"></i>
+						LinkedIn
+					</a>
 				</div>
 				<div class="col-lg-6 col-md-12">
 					<img
 						class="hero__image"
-						src="images/hero/tindog-phone.png"
+						src="images/hero/coder.png"
 						alt="Mockup of dog dating app"
 					/>
 				</div>
 			</div>
 		</div>
-		<div class="features container-fluid">
+		<div class="tech">
 			<div class="row">
-				<div class="features__col feature col-lg col-sm-12">
-					<i class="feature__img fas fa-check-circle"></i>
-					<h3 class="feature__title">Easy to use</h3>
-					<p feature__desc>
-						So easy to use, even your dog could do it.
-					</p>
+				<div class="tech__col tech col-lg col-sm-12">
+					<i
+						class="tech__img tech__img--html fa-brands fa-html5"
+					></i>
+					<h3 class="tech__title title-medium">HTML</h3>
+					<p skill__desc>Fundamental structure of the website.</p>
 				</div>
-				<div class="features__col feature col-lg col-sm-12">
-					<i class="feature__img fas fa-bullseye"></i>
-					<h3 class="feature__title">Elite Clientele</h3>
-					<p feature__desc>
-						We have all the dogs, the greatest dogs.
-					</p>
+				<div class="tech__col tech col-lg col-sm-12">
+					<i
+						class="tech__img tech__img--css fa-brands fa-css3-alt"
+					></i>
+					<h3 class="tech__title title-medium">CSS</h3>
+					<p skill__desc>Build a beautiful layout.</p>
 				</div>
-				<div class="features__col feature col-lg col-sm-12">
-					<i class="feature__img fas fa-heart"></i>
-					<h3 class="feature__title">Guaranteed to work</h3>
-					<p feature__desc>
-						Find the love of your dog's love or your money back.
-					</p>
+				<div class="tech__col tech col-lg col-sm-12">
+					<i class="tech__img tech__img--js fa-brands fa-js"></i>
+					<h3 class="tech__title title-medium">JavaScript</h3>
+					<p skill__desc>Add interaction to the website.</p>
+				</div>
+				<div class="tech__col tech col-lg col-sm-12">
+					<i
+						class="tech__img tech__img--sass fa-brands fa-sass"
+					></i>
+					<h3 class="tech__title title-medium">SASS</h3>
+					<p skill__desc>Enhance CSS development experience.</p>
+				</div>
+				<div class="tech__col tech col-lg col-sm-12">
+					<i
+						class="tech__img tech__img--git fa-brands fa-git-alt"
+					></i>
+					<h3 class="tech__title title-medium">Git</h3>
+					<p skill__desc>Control file version history.</p>
 				</div>
 			</div>
 		</div>
 		<div
-			id="carouselId"
-			class="testimonials carousel slide"
+			id="story"
+			class="story carousel slide"
 			data-bs-ride="carousel"
 		>
 			<div class="carousel-inner" role="listbox">
 				<div class="carousel-item active">
-					<p class="testimonials__text">
-						I no longer have to sniff other dogs for love. I've
-						found the hottest Corgi on TinDog. Woof!
+					<p class="story__text">
+						I went to college for computer science, studied for two
+						years. Over time, I realized that a diploma does not
+						provide a lot of fundamental knowledge. Then I started
+						taking courses on the Udemy platform.
 					</p>
-					<img
-						class="testimonials__logo"
-						src="images/testimonials/dog.jpg"
-						alt="Dog photo"
-					/>
-					<em>Pebbles, New York</em>
 				</div>
 				<div class="carousel-item">
-					<p class="testimonials__text">
-						My dog used to be so lonely, but with TinDog's help,
-						they've found the love of their life. I think.
+					<p class="story__text">
+						I have learned many new skills including Bootstrap,
+						PostCSS, Document Object Model, Node JS, ExpressJS and
+						MongoDB. Now I am looking for a job in order to show my
+						abilities and start working in team projects with more
+						experienced colleagues from whom I will gain useful
+						experience.
 					</p>
-					<img
-						class="testimonials__logo"
-						src="images/testimonials/lady-img.jpg"
-						alt="Beverly photo"
-					/>
-					<em>Beverly, Illinois</em>
 				</div>
 			</div>
 			<button
 				class="carousel-control-prev"
 				type="button"
-				data-bs-target="#carouselId"
+				data-bs-target="#story"
 				data-bs-slide="prev"
 			>
 				<i class="fas fa-chevron-left" area-hidden="true"></i>
@@ -154,113 +161,93 @@
 			<button
 				class="carousel-control-next"
 				type="button"
-				data-bs-target="#carouselId"
+				data-bs-target="#story"
 				data-bs-slide="next"
 			>
 				<i class="fas fa-chevron-right" area-hidden="true"></i>
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-		<div class="press">
-			<img
-				class="press__logo"
-				src="images/press/TechCrunch.png"
-				alt="TechCrunch Logo"
-			/>
-			<img
-				class="press__logo"
-				src="images/press/tnw.png"
-				alt="TNW Logo"
-			/>
-			<img
-				class="press__logo"
-				src="images/press/bizinsider.png"
-				alt="BusinessInsider Logos"
-			/>
-			<img
-				class="press__logo"
-				src="images/press/mashable.png"
-				alt="Mashable Logo"
-			/>
-		</div>
-		<div id="pricing" class="pricing container-fluid">
-			<h2 pricing__title">
-				A Plan for Every Dog's Needs
-			</h2>
-			<h3 class="pricing__subtitle">
-				Simple and affordable price plans for your and your dog.
+		<div id="skills" class="skills container-fluid">
+			<h2 class="skills__title">Current skill stack</h2>
+			<h3 class="skills__subtitle">
+				This list will grow as I progress further in my learning.
 			</h3>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="pricing-card pricing__card">
+					<div class="skills-card skills__card">
 						<img
-							class="pricing-card__img"
-							src="images/pricing/labrador.svg"
-							alt="Labrador"
+							class="skills-card__img"
+							src="images/skills/binary.svg"
+							alt="Binary code"
 						/>
-						<p class="pricing-card__title">Basic</p>
-						<h3 class="pricing-card__price">FREE</h3>
-						<ul class="pricing-card__features">
-							<li class="pricing-card__feature">Unlimited conferences</li>
-							<li class="pricing-card__feature">100 participants max</li>
-							<li class="pricing-card__feature">Custom Hold Music</li>
-							<li class="pricing-card__feature">10 participants max</li>
+						<h3 class="skills-card__title title-medium">Languages</h3>
+						<ul class="skills-card__skills">
+							<li class="skills-card__skill">CSS</li>
+							<li class="skills-card__skill">HTML</li>
+							<li class="skills-card__skill">JavaScript</li>
+							<li class="skills-card__skill">SASS</li>
 						</ul>
-						<a href="#!" class="pricing-card__btn pricing-card__btn--plan--basic">
-							Free
-						</a>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="pricing-card pricing__card pricing__card--highlighted">
+					<div class="skills-card skills__card">
 						<img
-							class="pricing-card__img"
-							src="images/pricing/chihuahua.svg"
-							alt="Chihuahua"
+							class="skills-card__img"
+							src="images/skills/tech.svg"
+							alt="Technology"
 						/>
-						<p class="pricing-card__title">Pro</p>
-						<h3 class="pricing-card__price">$49</h3>
-						<ul class="pricing-card__features">
-							<li class="pricing-card__feature">Unlimited conferences</li>
-							<li class="pricing-card__feature">100 participants max</li>
-							<li class="pricing-card__feature">Custom Hold Music</li>
-							<li class="pricing-card__feature">10 participants max</li>
+						<h3 class="skills-card__title title-medium">Technologies</h3>
+						<ul class="skills-card__skills">
+							<li class="skills-card__skill">Bootstrap</li>
+							<li class="skills-card__skill">Git</li>
+							<li class="skills-card__skill">jQuery</li>
+							<li class="skills-card__skill">NodeJS</li>
+							<li class="skills-card__skill">NPM</li>
+							<li class="skills-card__skill">PostCSS</li>
 						</ul>
-						<a href="#!" class="pricing-card__btn pricing-card__btn--plan--pro">
-							Purchase
-						</a>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="pricing-card pricing__card">
+					<div class="skills-card skills__card">
 						<img
-							class="pricing-card__img"
-							src="images/pricing/mastiff.svg"
-							alt="Mastiff"
+							class="skills-card__img"
+							src="images/skills/tools.svg"
+							alt="Tools"
 						/>
-						<p class="pricing-card__title">Enterprise</p>
-						<h3 class="pricing-card__price">$69</h3>
-						<ul class="pricing-card__features">
-							<li class="pricing-card__feature">Unlimited conferences</li>
-							<li class="pricing-card__feature">100 participants max</li>
-							<li class="pricing-card__feature">Custom Hold Music</li>
-							<li class="pricing-card__feature">10 participants max</li>
+						<h3 class="skills-card__title title-medium">Tools</h3>
+						<ul class="skills-card__skills">
+							<li class="skills-card__skill">GitHub</li>
+							<li class="skills-card__skill">
+								Visual Studio Code
+							</li>
 						</ul>
-						<a href="#!" class="pricing-card__btn pricing-card__btn--plan--entreprise">
-							Purchase
-						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer class="footer container-fluid">
+		<footer class="footer">
 			<div id="socials" class="socials footer__socials">
-				<a class="socials__icon" href="#!"><i class="fa-brands fa-twitter"></i></a>
-				<a class="socials__icon" href="#!"><i class="fa-brands fa-facebook"></i></a>
-				<a class="socials__icon" href="#!"><i class="fa-brands fa-instagram"></i></a>
-				<a class="socials__icon" href="#!"><i class="fa-solid fa-envelope"></i></a>
+				<a
+					class="socials__icon"
+					href="https://twitter.com/kasmonavvt"
+					target="_blank"
+					><i class="fa-brands fa-twitter"></i
+				></a>
+				<a
+					class="socials__icon"
+					href="https://github.com/kasmonavvt"
+					target="_blank"
+					><i class="fa-brands fa-github"></i
+				></a>
+				<a class="socials__icon" href="mailto:kasmonavvt@gmail.com"
+					><i class="fa-solid fa-envelope"></i
+				></a>
 			</div>
-			<p class="footer__copr">© Copyright 2021 TinDog</p>
+			<p class="footer__copr">
+				By Mitya <span class="footer__flag">🇺🇦</span>
+				<span id="footer__year"></span>
+			</p>
 		</footer>
 		<script src="index.js"></script>
 	</body>
