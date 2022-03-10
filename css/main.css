@@ -11285,8 +11285,16 @@ textarea.form-control-lg {
   font-size: 62.5%;
 }
 
+html {
+  scrollbar-width: none;
+}
+
 body {
   font-size: 1.6rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -11297,6 +11305,10 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
 }
 
 a:link {
@@ -11335,16 +11347,17 @@ p {
   line-height: 1.5;
 }
 
-h2 {
-  font-size: 3.5rem;
-}
-
 .container-fluid {
   padding: 9rem 14rem;
 }
 
 .title-medium {
   font-size: 3rem;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -11439,11 +11452,38 @@ h2 {
   font-weight: bold;
 }
 
+.projects__title {
+  text-align: center;
+  margin: 2rem 0;
+}
+.projects__content {
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+
+.project-item__img {
+  width: 100%;
+  transition: 1.2s ease;
+}
+.project-item__img:hover {
+  transform: scale(1.1);
+  transition: 1.2s ease;
+}
+.project-item__title {
+  margin-top: 2rem;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
 .skills {
   text-align: center;
 }
 .skills__title {
-  font-weight: bold;
   margin: 2rem 0;
 }
 .skills__subtitle {

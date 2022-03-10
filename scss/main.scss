@@ -4,7 +4,7 @@
 @use "_typography";
 
 @mixin boxShadow {
-	box-shadow: 0 .5rem 4rem 0 hsl(0 0% 80% / 0.55);
+	box-shadow: 0 0.5rem 4rem 0 hsl(0 0% 80% / 0.55);
 }
 
 .container-fluid {
@@ -13,6 +13,11 @@
 
 .title-medium {
 	font-size: 3rem;
+	font-weight: bold;
+}
+
+.section-title {
+	font-size: 3.5rem;
 	font-weight: bold;
 }
 
@@ -124,11 +129,48 @@
 	}
 }
 
+.projects {
+	&__title {
+		text-align: center;
+		margin: 2rem 0;
+	}
+
+	&__content {
+		margin: 4rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 1rem;
+	}
+}
+
+.project-item {
+	&__link {
+	}
+
+	&__img {
+		width: 100%;
+		transition: 1.2s ease;
+
+		&:hover {
+			transform: scale(1.1);
+			transition: 1.2s ease;
+		}
+	}
+
+	&__title {
+		margin-top: 2rem;
+		font-size: 4rem;
+		text-align: center;
+		font-family: "Secular One", sans-serif;
+		text-transform: uppercase;
+	}
+}
+
 .skills {
 	text-align: center;
 
 	&__title {
-		font-weight: bold;
 		margin: 2rem 0;
 	}
 
